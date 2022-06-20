@@ -1,16 +1,16 @@
 #include <Python.h>
 
-void print_python_list(PyObjecct *p);
+void print_python_list(PyObject *p);
 void print_python_bytes(PyObject *p);
 void print_python_float(PyObject *p);
 
 /**
- * print_python_list - Prints basic info about Python lists
- * @p: A PyObject list object
+ * print_python_list - Prints basic info about Python lists.
+ * @p: A PyObject list object.
  */
 void print_python_list(PyObject *p)
 {
-	Py_ssize t size, alloc, i;
+	Py_ssize_t size, alloc, i;
 	const char *type;
 	PyListObject *list = (PyListObject *)p;
 	PyVarObject *var = (PyVarObject *)p;
@@ -30,18 +30,20 @@ void print_python_list(PyObject *p)
 	printf("[*] Size of the Python List = %ld\n", size);
 	printf("[*] Allocated = %ld\n", alloc);
 
-	for (i = 0 ; i < size ; i++)
+	for (i = 0; i < size; i++)
 	{
 		type = list->ob_item[i]->ob_type->tp_name;
 		printf("Element %ld: %s\n", i, type);
 		if (strcmp(type, "bytes") == 0)
+			print_python_bytes(list->ob_item[i]);
+		else if (strcmp(type, "float") == 0)
 			print_python_float(list->ob_item[i]);
 	}
 }
 
 /**
- * print_python_bytes - Prints basic info about Python byte object
- * @p: A PyObject bye object
+ * print_python_bytes - Prints basic info about Python byte objects.
+ * @p: A PyObject byte object.
  */
 void print_python_bytes(PyObject *p)
 {
