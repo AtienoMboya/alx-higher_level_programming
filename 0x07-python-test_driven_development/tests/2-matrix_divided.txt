@@ -61,7 +61,7 @@ Integers and floats can be combined.
     [[0.33, -0.73, 1.0, 1.47, 1.67], [-2.2, 2.33, 2.67, 3.33, 3.33]]
 
 Invalid Matrices
-================
+==============
 
 The parameter ``matrix`` must be a list of lists consisting of either ints or
 floats. If ``matrix`` is not a list, a TypeError is raised.
