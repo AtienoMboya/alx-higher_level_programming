@@ -1,8 +1,8 @@
-[0-read_file.py](/0-read_file.py)-reads a text file and prints to sdout__
-[1-write_file.py](/1-write_file.py) - writes a string to a text file and returns the number of characters\n
-[2-append_write.py](/2-append_write.py) - appends a string at the end of a text file\n
-[3-to_json_string.py](/3-to_json_string.py) - returns the JSON representation of an object (string)\n
-[4-from_json_string.py](/4-from_json_string.py) - returns an object (Python data structure) represented by JSON string\n
+[0-read_file.py](/0-read_file.py)-reads a text file and prints to sdout<br/>
+[1-write_file.py](/1-write_file.py) - writes a string to a text file and returns the number of characters<br/>
+[2-append_write.py](/2-append_write.py) - appends a string at the end of a text file<br/>
+[3-to_json_string.py](/3-to_json_string.py) - returns the JSON representation of an object (string)<br/>
+[4-from_json_string.py](/4-from_json_string.py) - returns an object (Python data structure) represented by JSON string<br/>
 [5-save_to_json_file.py](/5-save_to_json_file.py) - writes an Object to a text file, using a JSON representation\n
 [6-load_from_json_file.py](/6-load_from_json_file.py) - function that creates an Object from a "JSON file"\n
 [7-add_item.py](/7-add_item.py) - write a script that adds all arguments to a Python list, and then save them to a file\n
