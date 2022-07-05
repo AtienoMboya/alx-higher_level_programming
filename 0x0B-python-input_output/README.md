@@ -1,4 +1,4 @@
-[0-read_file.py](/0-read_file.py)-reads a text file and prints to sdout\n
+[0-read_file.py](/0-read_file.py)-reads a text file and prints to sdout__
 [1-write_file.py](/1-write_file.py) - writes a string to a text file and returns the number of characters\n
 [2-append_write.py](/2-append_write.py) - appends a string at the end of a text file\n
 [3-to_json_string.py](/3-to_json_string.py) - returns the JSON representation of an object (string)\n
