@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     try:
         list = load_from_json_file(filename)
-    except:
+    except Exception:
         list = []
 
     list.extend(argv[1:])
