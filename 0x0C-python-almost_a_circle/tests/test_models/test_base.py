@@ -26,3 +26,4 @@ class TestBase_instantiation(unittest.TestCase):
         b2 = Base()
         b3 = Base()
         self.assertEqual(b1.id, b3.id - 2)
+
