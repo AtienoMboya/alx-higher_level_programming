@@ -435,3 +435,8 @@ class TestRectangle_area(unittest.TestCase):
         r = Rectangle(2, 10, 1, 1, 1)
         with self.assertRaises(TypeError):
             r.area(1)
+
+class TestRectangle_stdout(unittest.TestCase):
+    """Unittests for testing __str__ and display methods of Rectangle class."""
+
+    @staticmethod
